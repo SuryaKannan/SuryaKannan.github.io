@@ -1,0 +1,47 @@
+baseURL = 'https://suryakannan.github.io/'
+languageCode = 'en-au'
+title = 'SuryaK'
+
+[module]
+  [[module.imports]]
+    path = 'github.com/adityatelange/hugo-PaperMod'
+
+[params]
+  defaultTheme = 'light'
+  showReadingTime = true
+  showShareButtons = false
+  showPostNavLinks = true
+  showBreadCrumbs = true
+  showCodeCopyButtons = true
+  showTableOfContents = true
+
+  [params.homeInfoParams]
+    Title = "Hi, I'm SuryaK"
+    Content = "Welcome to my personal website and blog."
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/SuryaKannan'
+
+  [[params.socialIcons]]
+    name = 'linkedin'
+    url = 'https://www.linkedin.com/in/surya-kannan/'
+
+[menu]
+  [[menu.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 10
+
+  [[menu.main]]
+    name = 'Projects'
+    url = '/projects/'
+    weight = 20
+
+  [[menu.main]]
+    name = 'Blog'
+    url = '/posts/'
+    weight = 30
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
