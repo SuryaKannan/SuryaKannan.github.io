@@ -1,6 +1,7 @@
 baseURL = 'https://suryakannan.com/'
 languageCode = 'en-au'
-title = 'SuryaK'
+title = 'Surya Kannan'
+buildFuture = true
 
 [module]
   [[module.imports]]
@@ -15,9 +16,20 @@ title = 'SuryaK'
   showCodeCopyButtons = true
   showTableOfContents = true
 
-  [params.homeInfoParams]
-    Title = "Hi, I'm SuryaK"
-    Content = "Welcome to my personal website and blog."
+  [params.assets]
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+
+  [params.profileMode]
+    enabled = true
+    title = "Hi, I'm Surya"
+    subtitle = "Welcome to my personal website and blog."
+    imageUrl = "/images/profile_pic.jpg"
+    imageTitle = "Profile photo"
+    imageWidth = 280
+    imageHeight = 300
 
   [[params.socialIcons]]
     name = 'github'
@@ -42,6 +54,11 @@ title = 'SuryaK'
     name = 'Blog'
     url = '/posts/'
     weight = 30
+  
+  [[menu.main]]
+    name = 'Booklist'
+    url = '/booklist/'
+    weight = 40
 
 [outputs]
   home = ['HTML', 'RSS', 'JSON']

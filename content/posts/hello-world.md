@@ -1,6 +1,6 @@
 ---
 title: "Yo"
-date: 2025-12-13
+date: "2025-12-26"
 description: "Post #1"
 tags: ["intro"]
 ---
