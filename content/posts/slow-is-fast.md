@@ -5,8 +5,6 @@ description: "Post #2"
 tags: ["reflection"]
 ---
 
-### Everyone is suddenly a 10x engineer now
-
 I recently watched [this video](https://youtu.be/biOAnpuBy1s) from one of the YouTubers I follow, Clarence Kennedy (shoutout to my man), and even though the video is mostly about weightlifting, it made me think a lot about the current landscape of the tech industry.
 
 These days when we browse online i'm sure you see post after post of people "building and shipping an entire product in a weekend", you can't help but be a little skeptical of it all. The main question I really have is how much of what they built did they really understand?
