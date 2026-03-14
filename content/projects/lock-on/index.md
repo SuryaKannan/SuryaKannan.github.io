@@ -1,6 +1,6 @@
 ---
 title: "lock-on"
-date: "2026-03-15"
+date: "2026-03-14"
 tags: ["python","developer-tooling"]
 description: "A deep dive into dependency resolution"
 ---
