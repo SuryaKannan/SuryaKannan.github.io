@@ -3,6 +3,7 @@ title: "lock-on"
 date: "2026-03-14"
 tags: ["python","developer-tooling"]
 description: "A deep dive into dependency resolution"
+summary: "A deep dive into dependency resolution"
 ---
 
   > [Code for this write-up](https://github.com/SuryaKannan/lock-on).                                   
@@ -159,7 +160,7 @@ UP fires before each branch, immediately collapsing packages where only one cand
 
 ### So why is uv so much faster than pip?
 
-A few compounding reasons. The resolver is the most relevant given what we just built, but IO handling is a big one too.
+Other than the fact its written in Rust, a few compounding reasons. The resolver is the most relevant given what we just built, but IO handling is a big one too.
 
 **The resolver**
 

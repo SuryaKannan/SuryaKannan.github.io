@@ -25,7 +25,7 @@ buildFuture = true
   [params.profileMode]
     enabled = true
     title = "Hi, I'm Surya"
-    subtitle = "Welcome to my personal website and blog."
+    subtitle = "Welcome to my personal website and blog 🙌🏾"
     imageUrl = "/images/profile_pic.jpg"
     imageTitle = "Profile photo"
     imageWidth = 280
