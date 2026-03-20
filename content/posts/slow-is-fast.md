@@ -5,17 +5,31 @@ description: "Post #2"
 tags: ["reflection"]
 ---
 
+```md
+Update: 21/03/26
+
+A good friend read this post and then pointed me towards 
+
+https://github.com/DrCatHicks/learning-opportunities. 
+
+Its a Claude marketplace with skills that allow you set and update learning goals as you work on a project. 
+
+It also provides you exercises that assess your ability to recall on code you've written, helping to reaffirm your understanding. 
+
+So far i'm really enjoying it, highly recommend giving it a go too!                                  
+```
+
 I recently watched [this video](https://youtu.be/biOAnpuBy1s) from one of the YouTubers I follow, Clarence Kennedy (shoutout to my man), and even though the video is mostly about weightlifting, it made me think a lot about the current landscape of the tech industry.
 
 These days when we browse online i'm sure you see post after post of people "building and shipping an entire product in a weekend", you can't help but be a little skeptical of it all. The main question I really have is how much of what they built did they really understand?
 
-Right now the most benefitted portion of AI tooling users are definitely veterans who have had decades of experience in their industries. They know design patterns in and out, and have real experience to have good taste in what they are getting their tools to build for them. The rest of us, no matter how hard we try, probably won't get there without the same battle scars they have - a production outage at 2am, a migration that broke everything, debugging a race condition for days.
+Right now the most benefitted portion of AI tooling users are definitely veterans who have had decades of experience in their industries. They know design patterns in and out, and have real experience to have good taste in what they are getting their tools to build for them. The rest of us, no matter how hard we try, probably won't get there without the same battle scars they have. A production outage at 2am, a migration that broke everything, debugging a race condition for days...
 
 ### Mastery still requires struggle, even in the age of AI
 
 Building fast in most cases means shipping a codebase so broken that you torture yourself months later from all the bad design decisions you made. The cracks really start to show when something breaks, and you don't know how to fix it. When we go in blind with AI, and don't have a grasp of design tradeoffs, this is even more exacerbated. I think this is where juniors are especially exposed.
 
-This new tooling provides us with false confidence - effortless access to information feels like understanding, but it isn't unless we already have decision making context, debugging intuition and know what architectural trade offs exist.
+This new tooling provides us with false confidence. It gives us effortless access to information feels like understanding, but it isn't unless we already have decision making context, debugging intuition and know what architectural trade offs exist.
 
 The judgement to pick the right tool for the right job is something I've learnt that you can't really shortcut. After working in the industry (even with my limited experience), one thing I have noticed by working with amazing engineers is that they just have this. It extends to languages, frameworks and system design. All of this, regardless of any industry, comes with lived experience.
 

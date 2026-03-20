@@ -3,7 +3,16 @@ title: "lock-on"
 date: "2026-03-14"
 tags: ["python","developer-tooling"]
 description: "A deep dive into dependency resolution"
+summary: "A deep dive into dependency resolution"
 ---
+
+```md
+Update: 20/03/26
+
+https://openai.com/index/openai-to-acquire-astral/
+
+... 😔 
+```
 
   > [Code for this write-up](https://github.com/SuryaKannan/lock-on).                                   
                                                
@@ -99,9 +108,9 @@ trying database version 1.0.0        ← backtracks here
   auth version 1.0.0 not satisfied
 ```
 
-Both `auth` versions fail for the exact same reason — `json-lib` is already pinned to `2.0.0` and neither can satisfy it. After backtracking to try a different `database` version, it rediscovers the same failure from scratch. Backtracking finds the right answer, but it's slow because it doesn't learn why something failed and just blindly tries the next option.
+Both `auth` versions fail for the exact same reason and its that `json-lib` is already pinned to `2.0.0` and neither can satisfy it. After backtracking to try a different `database` version, it rediscovers the same failure from scratch. Backtracking finds the right answer, but it's slow because it doesn't learn why something failed and just blindly tries the next option.
 
-[Backjumping was actually added in pip 25.1 (2025)](https://github.com/sarugaku/resolvelib/blob/main/CHANGELOG.rst) — instead of backtracking one step at a time, it skips past packages not involved in the conflict. This is closer to what you'd see in conflict-driven approaches, which we will explore next.
+Note: [Backjumping was actually added in pip 25.1 (2025)](https://github.com/sarugaku/resolvelib/blob/main/CHANGELOG.rst). Instead of backtracking one step at a time, it skips past packages not involved in the conflict. This is closer to what you'd see in conflict-driven approaches, which we will explore next.
 
 ###  PubGrub 
 
@@ -159,7 +168,7 @@ UP fires before each branch, immediately collapsing packages where only one cand
 
 ### So why is uv so much faster than pip?
 
-A few compounding reasons. The resolver is the most relevant given what we just built, but IO handling is a big one too.
+Other than the fact its written in Rust with its more efficient memory management, a few compounding reasons. The resolver is the most relevant given what we just built, but IO handling is a big one too.
 
 **The resolver**
 
